@@ -282,10 +282,12 @@ section {
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 4rem;
-    align-items: start;
+  display: grid;
+  gap: 4rem;
+  justify-content: center;   /* centers the grid items */
+  max-width: 900px;          /* keeps it from spanning too wide */
+  margin: 0 auto;            /* centers the whole section in the page */
+  text-align: center;        /* centers text inside */
 }
 
 .about-text p {
