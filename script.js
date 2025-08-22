@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             width: 0%;
             height: 3px;
-            background: linear-gradient(to right, #3b82f6, #f59e0b);
+            background: linear-gradient(to right, #896C6C, #E5BEB5);
             z-index: 999;
             transition: width 0.1s ease;
         `;
@@ -235,6 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (heroSection) {
             heroSection.style.transform = `translateY(${rate}px)`;
+            heroSection.style.backgroundColor = "#f7efda";
         }
     }
 

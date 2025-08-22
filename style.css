@@ -506,10 +506,6 @@ section {
     margin: 0 auto;
 }
 
-body {
-    background-color: var(--bg-secondary);
-}
-
 .gallery img {
     width: 100%;
     aspect-ratio: 4 / 3;   /* width : height ratio */
