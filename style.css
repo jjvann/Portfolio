@@ -898,3 +898,21 @@ textarea:focus {
         color: black !important;
     }
 }
+
+/* Hero Style */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .hero-container {
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .hero img, .hero svg {
+        max-width: 100%;
+        height: auto;
+    }
+}
