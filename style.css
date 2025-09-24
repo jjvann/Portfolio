@@ -2,14 +2,14 @@
 :root {
     --primary-color: #536d34;
     --primary-dark: #283618;
-    --secondary-color: #E5BEB5;
-    --accent-color: #896C6C;
+    --secondary-color: #504B38;
+    --accent-color: #B9B28A;
     --text-primary: #1B1B1B;
     --text-secondary: #64748b;
     --text-light: #94a3b8;
     --bg-primary: #f7efda;
     --bg-secondary: #fffdf6;
-    --bg-accent: #FCD8CD;
+    --bg-accent: #EBE5C2;
     --border-color: #DED3C4;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -118,7 +118,7 @@ p {
     width: 100%;
     background-color: var(--bg-secondary);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--text-primary);
     z-index: 1000;
     transition: var(--transition);
 }
@@ -251,7 +251,7 @@ p {
     object-fit: cover; /* keeps aspect ratio */
     width: 450px; /* same as in your HTML */
     height: 450px;
-    border: 5px solid var(--accent-color); /* optional, adds a nice border */
+    border: 5px solid var(--primary-dark); /* optional, adds a nice border */
 }
 
 /* Section Styles */
@@ -719,14 +719,14 @@ section {
 
 /* Footer */
 .footer {
-    background-color: #f3e4da;
+    background-color: #504B38;
     color: #ffffff;
     padding: 2rem 0;
     text-align: center;
 }
 
 .footer-content p {
-    color: #342c29;
+    color: white;
     margin-bottom: 0.5rem;
 }
 

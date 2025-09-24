@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function() {
             left: 0;
             width: 0%;
             height: 3px;
-            background: linear-gradient(to right, #896C6C, #E5BEB5);
+            background: linear-gradient(to right, #283618, #536d34);
             z-index: 999;
             transition: width 0.1s ease;
         `;
