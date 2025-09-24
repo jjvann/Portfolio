@@ -363,7 +363,7 @@ section {
 .timeline-icon {
     width: 60px;
     height: 60px;
-    background-color: var(white);
+    background-color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -383,7 +383,7 @@ section {
 .timeline-content {
     flex: 1;
     padding: 2rem;
-    background-color: var(--bg-secondary);
+    background-color: white;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
 }
@@ -418,7 +418,7 @@ section {
 }
 
 .experience-card {
-    background-color: var(--bg-secondary);
+    background-color: white;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-md);
@@ -661,7 +661,7 @@ section {
 
 /* Contact Form */
 .contact-form {
-    background-color: var(--bg-secondary);
+    background-color: white;
     padding: 2rem;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
@@ -680,7 +680,7 @@ section {
     border-radius: var(--radius);
     font-size: 1rem;
     font-family: inherit;
-    background-color: var(--bg-secondary);
+    background-color: white;
     transition: var(--transition);
 }
 
