@@ -12,26 +12,20 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">My Portfolio</a>
+            <a href="#home" class="nav-logo">JV</a>
+            <div class="nav-left">
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#selected-work" class="nav-link">Selected Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <div class="nav-right">
+                <a href="#contact" class="nav-link nav-contact">Contact Me</a>
+            </div>
             <div class="nav-toggle" id="nav-toggle">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -43,215 +37,154 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">JJ Vann</h1>
-                    <p class="hero-tagline">Driven student-athlete at UT Austin, blending Informatics 
-                        and Business to turn data into decisions.</p>
-                    <div class="hero-buttons">
-                        <a href="#experience" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="profile-picture">
-                        <img src="images/profile.jpg" alt="JJ Vann profile picture" width="450" height="450">
-                    </div>
-                </div>
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="JJ Vann profile picture">
+            </div>
+            <div class="hero-text">
+                <p class="hero-rotating-text">
+                    <span class="rotating-text-wrapper">
+                        <span class="rotating-text">Student-athlete</span>
+                    </span>
+                </p>
+                <p class="hero-description">Hey, I'm JJ Vann. Here you can check out what I'm working on.</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I’m a junior at UT Austin, aspiring to grow into a career in UX design. As both a student 
-                        and athlete on the Texas Men’s Lacrosse team, I’ve learned the importance of discipline, 
-                        collaboration, and resilience - values I carry into every project.
-                    </p>
-                    <p>
-                        I take pride in my work and approach challenges with both determination and curiosity. 
-                        My experiences range from founding Hill Country Pressure Washing, where I built a business 
-                        from the ground up, to interning as an Analytics Intern at Young Life Studio 41, where I 
-                        developed data-driven insights and realized my passion for pairing analytics with creativity.
-                    </p></p>
-                    <p>
-                        These experiences, combined with my entrepreneurial mindset and team-driven background, 
-                        have shaped me into someone who values both results and people. I’m eager to continue 
-                        exploring opportunities where I can create meaningful, human-centered solutions through design.
-                    </p></p>
-                    <p>
-                        Outside of academics, my Christian faith grounds my values, and I enjoy spending time outdoors, 
-                        traveling, and staying active.
-                    </p>
-                    <div class="skills">
-                        <h3>Skills & Technologies</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML/CSS</span>
-                            <span class="skill-tag">Google Sheets</span>
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Figma</span>
-                            <span class="skill-tag">Canva</span>
-                            <span class="skill-tag">Interviewing</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="about-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects Completed</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Years Experience</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Client Satisfaction</div>
-                    </div>
-                </div> -->
-            </div>
+    <!-- Image Gallery Section -->
+    <section class="image-gallery">
+        <div class="gallery-container">
+            <img src="images/profile.jpg" alt="Gallery Image 1" class="gallery-image">
+            <img src="images/profile.jpg" alt="Gallery Image 2" class="gallery-image">
+            <img src="images/profile.jpg" alt="Gallery Image 3" class="gallery-image">
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- Selected Work Section -->
+    <section id="selected-work" class="selected-work">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Education</h2>
-                <p class="section-subtitle">My academic journey</p>
+                <h2 class="section-title">Selected Work</h2>
             </div>
-
-            <div class="education-timeline">
-
-                <!-- UT Austin -->
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <img src="images/ut-austin-logo.png" alt="UT Austin Logo">
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Science in Informatics</h3>
-                        <h4>The University of Texas at Austin</h4>
-                        <p class="timeline-date">2024 - 2027</p>
-                        <p>
-                            Pursuing a B.S. in Informatics with a concentration in UX Design and a Business minor,
-                             focusing on the intersection of technology, design, 
-                            and user experience, while competing as a member of the Men’s Lacrosse team.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Texas State University -->
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <img src="images/texas-state-logo.png" alt="Texas State University Logo">
-                    </div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Science in Computer Science</h3>
-                        <h4>Texas State University</h4>
-                        <p class="timeline-date">2023 - 2024</p>
-                        <p>
-                            Completed freshman year at Texas State University as a Computer Science major 
-                            with a Math minor, earning a 4.0 GPA and being selected as a Resident Assistant 
-                            for the following year before transferring to UT Austin. 
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">My Experience</h2>
-                <p class="section-subtitle">Some of my recent work</p>
-            </div>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <div class="experience-image">
+            <div class="work-grid">
+                <a href="project-hillcountrymargs.html" class="work-card">
+                    <div class="work-card-image">
                         <img src="images/hillcountrymargs.png" alt="Hill Country Margs Logo">
                     </div>
-                    <div class="experience-content">
+                    <div class="work-card-content">
                         <h3>Hill Country Margs</h3>
-                        <p>An Austin-based company that rents out restaurant-grade margarita machines, combining 
-                            quality service with a fun local vibe to make any event better.</p>
-                        <!-- <div class="experience-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span> 
-                        </div> -->
-                        <div class="experience-links">
-                            <a href="gallery.html" class="experience-link">
-                                <i class="fas fa-images"></i> Photo Gallery
-                            </a>
-                            <a href="https://hillcountrymargaritas.com" class="experience-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i> Visit Website
-                            </a>
-                        </div>
+                        <p>Website, merch, and machine delivery</p>
                     </div>
-                </div>
+                </a>
 
-                <div class="experience-card">
-                    <div class="experience-image">
+                <a href="project-texaslacrosse.html" class="work-card">
+                    <div class="work-card-image">
+                        <img src="images/ut-austin-logo.png" alt="Texas Lacrosse Logo">
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Texas Lacrosse</h3>
+                        <p>Merch design and equipment management</p>
+                    </div>
+                </a>
+
+                <a href="project-studio41.html" class="work-card">
+                    <div class="work-card-image">
+                        <img src="images/studio41.png" alt="Young Life Logo">
+                    </div>
+                    <div class="work-card-content">
+                        <h3>Young Life</h3>
+                        <p>Marketing, operations, and camp volunteering</p>
+                    </div>
+                </a>
+
+                <a href="project-hillcountrypressurewash.html" class="work-card">
+                    <div class="work-card-image">
                         <img src="images/hillcountrypressurewash.png" alt="Hill Country Pressure Wash Logo">
                     </div>
-                    <div class="experience-content">
+                    <div class="work-card-content">
                         <h3>Hill Country Pressure Wash</h3>
-                        <p>A small business I founded that provides residential exterior cleaning services while 
-                            emphasizing efficiency, quality, and customer-focused solutions.
-                        </p>
-                        <!-- <div class="experience-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Express.js</span>
-                            <span class="tech-tag">Socket.io</span>
-                        </div> -->
-                        <div class="experience-links">
-                            <a href="#" class="experience-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="experience-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
+                        <p>Founder and operator of a local service business</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <a href="#" class="btn btn-primary">
+                    <i class="fas fa-download"></i> Download PDF
+                </a>
+            </div>
+
+            <div class="resume-content">
+                <div class="resume-section">
+                    <h3>Education</h3>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <div class="resume-header-content">
+                                <img src="images/ut-austin-logo.png" alt="UT Austin Logo" class="resume-logo">
+                                <div>
+                                    <h4>Bachelor of Science in Informatics</h4>
+                                    <p class="resume-org">The University of Texas at Austin</p>
+                                </div>
+                            </div>
+                            <span class="resume-date">2024 - 2027</span>
                         </div>
+                        <p>Concentration in UX Design, Business minor. Competing as a member of the Men's Lacrosse team.</p>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <div class="resume-header-content">
+                                <img src="images/texas-state-logo.png" alt="Texas State Logo" class="resume-logo">
+                                <div>
+                                    <h4>Bachelor of Science in Computer Science</h4>
+                                    <p class="resume-org">Texas State University</p>
+                                </div>
+                            </div>
+                            <span class="resume-date">2023 - 2024</span>
+                        </div>
+                        <p>Completed freshman year with a 4.0 GPA, Math minor. Selected as Resident Assistant for following year before transferring to UT Austin.</p>
                     </div>
                 </div>
 
-                <div class="experience-card">
-                    <div class="experience-image">
-                        <img src="images/studio41.png" alt="Studio 41 Logo">
-                    </div>
-                    <div class="experience-content">
-                        <h3>Young Life Studio 41</h3>
-                        <p>Studio 41 is the marketing and operations hub for Greater Austin Young Life, 
-                            supporting volunteers, fundraising, and community outreach with data-driven insights and 
-                            creative initiatives.
-                        </p>
-                        <!-- <div class="experience-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Chart.js</span>
-                            <span class="tech-tag">Weather API</span>
-                        </div> -->
-                        <div class="experience-links">
-                            <a href="#" class="experience-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="experience-link">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
+                <div class="resume-section">
+                    <h3>Experience</h3>
+                    
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h4>Founder & Owner</h4>
+                            <span class="resume-date">[Dates]</span>
                         </div>
+                        <p class="resume-org">Hill Country Pressure Wash</p>
+                        <p>Founded and operate a residential exterior cleaning business, focusing on efficiency, quality, and customer satisfaction.</p>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-item-header">
+                            <h4>Analytics Intern</h4>
+                            <span class="resume-date">[Dates]</span>
+                        </div>
+                        <p class="resume-org">Young Life Studio 41</p>
+                        <p>Developed data-driven insights to support marketing and operations for Greater Austin Young Life, combining analytics with creative initiatives.</p>
+                    </div>
+                </div>
+
+                <div class="resume-section">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">Google Sheets</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Canva</span>
                     </div>
                 </div>
             </div>
@@ -263,72 +196,32 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's work together</p>
+                <p class="section-subtitle">I'd love to hear from you</p>
             </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always open to discussing new opportunities, interesting projects, 
-                        or just having a chat. Feel free to reach out!
-                    </p>
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>jj.vann@yahoo.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+1 (830) 730-3942</p>
-                            </div>
-                        </div>
-                        <div class="contact-method">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Austin, TX</p>
-                            </div>
+            <div class="contact-simple">
+                <div class="contact-methods-simple">
+                    <div class="contact-method-simple">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:jj.vann@yahoo.com">jj.vann@yahoo.com</a>
                         </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-instagram"></i>
-                        </a>
+                    <div class="contact-method-simple">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="#" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="contact-method-simple">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h4>Instagram</h4>
+                            <a href="#" target="_blank">Follow me</a>
+                        </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" required>
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" required>
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
             </div>
         </div>
     </section>
@@ -338,7 +231,6 @@
         <div class="container">
             <div class="footer-content">
                 <p>&copy; 2025 Jacob Vann Jr. All rights reserved.</p>
-                <p>Built using HTML, CSS, and JavaScript</p>
             </div>
         </div>
     </footer>
