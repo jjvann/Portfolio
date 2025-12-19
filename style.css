@@ -5,7 +5,7 @@
     --white: #ffffff;
     --pine: #39514F;
     --pear: #D8E472;
-    --charcoal: #F6F7EF;
+    --charcoal: #161616;
     --text-primary: #1B1B1B;
     --text-secondary: #39514F;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -122,7 +122,7 @@ p {
     background-color: var(--white);
     z-index: 1000;
     transition: var(--transition);
-    padding: 2rem 0;
+    padding: 1.3rem 0;
 }
 
 
@@ -249,7 +249,17 @@ p {
     align-items: center;
     justify-content: center;
     background-color: var(--white);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/background-pic-2.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 2rem 2rem 0;
+    position: relative;
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-container {
@@ -268,11 +278,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 2rem;
 }
 
 .hero-image img {
-    width: 450px;
-    height: 450px;
+    width: 415px;
+    height: 415px;
     border-radius: 50%;
     object-fit: cover;
     border: 8px solid var(--pine);
@@ -310,15 +321,21 @@ p {
 }
 
 .hero-description {
-    font-size: 1.75rem;
-    color: #161616;
-    max-width: 700px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--charcoal);
+    max-width: 800px;
     margin: 0;
     line-height: 1.8;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-    padding-bottom: 6rem;
+    padding-bottom: 3.7rem;
+}
+
+.hero-name {
+    font-weight: 800;
+    color: #f54e00;
 }
 
 .hero-description.visible {
@@ -368,6 +385,23 @@ section {
     border-radius: var(--radius);
     font-size: 0.875rem;
     font-weight: 500;
+}
+
+.resume .skill-tag {
+    background-color: var(--white);
+    color: var(--charcoal);
+    border: 1px solid var(--charcoal);
+}
+
+.resume .btn-primary {
+    background-color: var(--white);
+    color: var(--charcoal);
+    border: none;
+}
+
+.resume .btn-primary:hover {
+    background-color: var(--pear);
+    color: var(--charcoal);
 }
 
 /* Description Section */
@@ -448,16 +482,16 @@ section {
 .work-card-image {
     overflow: hidden;
     background-color: var(--white);
-    padding: 3rem;
+    padding: 0rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 280px;
+    height: 200px;
     flex-shrink: 0;
 }
 
 .work-card-image img {
-    width: 100%;
+    width: auto;
     max-width: 100%;
     height: auto;
     max-height: 100%;
@@ -466,7 +500,7 @@ section {
 }
 
 .work-card-content {
-    padding: 2rem;
+    padding: 1rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -582,36 +616,9 @@ section {
 .resume {
     background-color: var(--pine);
     padding: 5rem 0;
-    color: var(--white);
 }
 
 .resume .section-title {
-    color: var(--white);
-}
-
-.resume-section h3 {
-    color: var(--white);
-    border-bottom-color: var(--white);
-}
-
-.resume-item {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.resume-item-header h4 {
-    color: var(--white);
-}
-
-.resume-date {
-    color: var(--white);
-    opacity: 0.9;
-}
-
-.resume-org {
-    color: var(--pear);
-}
-
-.resume-item p {
     color: var(--white);
 }
 
@@ -639,7 +646,7 @@ section {
 .resume-item {
     margin-bottom: 2rem;
     padding: 1.5rem;
-    background-color: var(--charcoal);
+    background-color: var(--white);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
 }
@@ -654,7 +661,7 @@ section {
 }
 
 .resume-item-header h4 {
-    color: var(--text-primary);
+    color: var(--charcoal);
     margin-bottom: 0;
 }
 
@@ -671,27 +678,29 @@ section {
 }
 
 .resume-date {
-    color: var(--text-secondary);
+    color: var(--charcoal);
     font-size: 0.875rem;
     font-weight: 500;
     white-space: nowrap;
+    opacity: 0.8;
 }
 
 .resume-org {
-    color: var(--pine);
+    color: var(--charcoal);
     font-weight: 500;
     margin-bottom: 0.5rem;
 }
 
 .resume-item p {
     margin-bottom: 0;
+    color: var(--charcoal);
 }
 
 .resume-section h3 {
-    color: var(--text-primary);
+    color: var(--white);
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--pine);
+    border-bottom: 2px solid var(--white);
 }
 
 /* Contact Section */
@@ -1049,7 +1058,7 @@ section {
     }
 
     .hero-description {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
 
     .gallery-container {

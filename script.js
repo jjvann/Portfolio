@@ -127,11 +127,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Rotating text feature (only on homepage)
+    // Updated order: UX/UI Designer, Student-athlete, Longhorn
     function initRotatingText() {
         const rotatingTextElement = document.querySelector('.rotating-text');
         if (!rotatingTextElement) return;
 
-        const texts = ['Student-athlete', 'Longhorn', 'Graphic Designer'];
+        const texts = ['UX/UI Designer', 'Student-athlete', 'Longhorn'];
         let currentIndex = 0;
         
         // Set initial text
