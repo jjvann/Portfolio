@@ -331,7 +331,7 @@ p {
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
     padding-bottom: 3.7rem;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 0.9), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 40px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 0.9), 0 0 80px rgba(255, 255, 255, 0.8), 0 0 100px rgba(255, 255, 255, 0.7) !important;
 }
 
 .hero-name {
@@ -858,7 +858,7 @@ section {
 
 .project-image-item {
     background-color: var(--charcoal);
-    border-radius: 0;
+    border-radius: 0 !important;
     overflow: hidden;
     box-shadow: none;
 }
@@ -867,22 +867,37 @@ section {
     width: 100%;
     height: auto;
     display: block;
+    border-radius: 0 !important;
 }
 
 .project-image-side-by-side {
     display: flex !important;
     flex-direction: row !important;
-    gap: 0;
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
+    gap: 0 !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 }
 
 .project-image-side-by-side img {
     width: 50% !important;
-    flex: 1;
-    object-fit: cover;
-    display: block;
+    flex: 1 !important;
+    object-fit: cover !important;
+    display: block !important;
+    border-radius: 0 !important;
+}
+
+/* Ensure side-by-side layout works on desktop */
+@media (min-width: 769px) {
+    .project-image-side-by-side {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    
+    .project-image-side-by-side img {
+        width: 50% !important;
+        border-radius: 0 !important;
+    }
 }
 
 .project-image-stacked {
@@ -891,12 +906,13 @@ section {
     gap: 0;
     background-color: transparent;
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 
 .project-image-stacked img {
     width: 100% !important;
     display: block;
+    border-radius: 0 !important;
 }
 
 .project-links {
