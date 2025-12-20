@@ -730,6 +730,9 @@ section {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 .contact-method-simple:hover {
@@ -755,17 +758,16 @@ section {
     margin-bottom: 0.25rem;
 }
 
-.contact-method-simple a {
+.contact-method-simple p {
     color: var(--pine);
     text-decoration: none;
     font-weight: 500;
+    margin: 0;
     transition: var(--transition);
 }
 
-.contact-method-simple a:hover {
-    color: var(--pine);
+.contact-method-simple:hover p {
     opacity: 0.8;
-    text-decoration: underline;
 }
 
 /* Project Detail Pages */
