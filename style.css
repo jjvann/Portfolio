@@ -899,13 +899,6 @@ section {
     display: block;
 }
 
-.image-caption {
-    padding: 1rem;
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-    margin: 0;
-}
-
 .project-links {
     display: flex;
     gap: 1rem;
