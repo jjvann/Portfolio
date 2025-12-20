@@ -147,8 +147,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 800); // Match CSS transition duration (0.8s)
         }
 
-        // Start rotation after initial display
+        // First rotation after 2 seconds, then regular 3-second intervals
         setTimeout(() => {
+            rotateText();
             setInterval(rotateText, 3000);
         }, 2000);
     }
