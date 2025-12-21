@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Cross-page navigation
                 window.location.href = href;
                 // Scroll will happen after page load
-                setTimeout(() => {
+        setTimeout(() => {
                     const targetSection = document.querySelector('#' + hash);
                     if (targetSection) {
                         const offsetTop = targetSection.offsetTop - 70;
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function rotateText() {
             rotatingTextElement.classList.add('fade-out');
-            setTimeout(() => {
+        setTimeout(() => {
                 currentIndex = (currentIndex + 1) % texts.length;
                 rotatingTextElement.textContent = texts[currentIndex];
                 rotatingTextElement.classList.remove('fade-out');
@@ -162,8 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenu.classList.remove('active');
             if (navToggle) {
                 navToggle.classList.remove('active');
-            }
         }
+    }
     });
 
     // Scroll handler for navbar state

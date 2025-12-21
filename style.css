@@ -527,6 +527,10 @@ section {
     font-size: var(--card-text-size);
 }
 
+.view-project-mobile {
+    display: none;
+}
+
 /* Experiences Gallery Section */
 .gallery-title {
     text-align: center;
@@ -1119,6 +1123,22 @@ section {
         opacity: 1 !important;
         transform: translateY(0) !important;
         padding-bottom: 0rem;
+    }
+    
+    .view-project-mobile {
+        display: block;
+        color: #b8c45a;
+        font-size: 1.3rem;
+        margin-top: 0.65rem;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1.5px;
+        text-decoration-color: #b8c45a;
+        transition: text-decoration-color 0.2s ease;
+    }
+    
+    .work-card:hover .view-project-mobile {
+        text-decoration-color: #b8c45a;
     }
     
         .mobile-only {
