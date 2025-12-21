@@ -253,7 +253,7 @@ p {
     align-items: center;
     justify-content: center;
     background-color: var(--white);
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('images/background-pic-2.jpeg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://jjvann.com/images/background-pic-2.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
