@@ -5,14 +5,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
-  const [rotatingText, setRotatingText] = useState('UX/UI Designer')
+  const [rotatingText, setRotatingText] = useState('Designer')
   const [isFading, setIsFading] = useState(false)
   const [isDescriptionVisible, setIsDescriptionVisible] = useState(false)
   const heroDescriptionRef = useRef<HTMLParagraphElement>(null)
 
   // Rotating text effect
   useEffect(() => {
-    const texts = ['UX/UI Designer', 'Student-athlete', 'Longhorn']
+    const texts = ['Designer', 'Student-athlete', 'Christian', 'Longhorn']
     let currentIndex = 0
     let intervalId: NodeJS.Timeout | null = null
 
