@@ -1,0 +1,14 @@
+<nav class="site-nav" aria-label="Main">
+  <a class="nav-logo" href="/" aria-label="{{ site.name }}, home"><svg class="nav-logo-mark" viewBox="10 20 1060 1040" aria-hidden="true" focusable="false" fill="currentColor"><rect x="10" y="20" width="510" height="200"/><rect x="320" y="169.318" width="200" height="890"/><polygon points="10,608.044 120.89,607.811 120.89,607.885 151.417,607.885 151.417,607.89 151.423,607.885 461.435,917.896 320.013,1059.318 10.049,749.354 10,749.354 10,717.608 10,678.69"/><rect x="560" y="20" width="200" height="890"/><rect x="560" y="790.575" width="200" height="268.743"/><polygon points="865.469,153.232 1054.229,219.335 760.071,1059.318 571.311,993.215"/><polyline points="837.684,232.572 911.44,20 1070,20 1070,174.737 1034.43,275.871"/></svg></a>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="/#work" data-nav="work" aria-current="{{ 'true' if navActive == 'work' else 'false' }}">Work</a></li>
+    <li><a href="/#about" data-nav="about" aria-current="{{ 'true' if navActive == 'about' else 'false' }}">About</a></li>
+    <li><a href="/#resume" data-nav="resume" aria-current="false">Resume</a></li>
+    <li><a class="nav-contact" href="/#contact">Contact</a></li>
+  </ul>
+</nav>

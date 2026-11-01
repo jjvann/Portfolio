@@ -1,0 +1,86 @@
+---
+layout: base.njk
+title: JJ Vann | Apparel & Product Design
+navActive: work
+---
+<section id="work" class="panels" data-nav-section="work" aria-label="Featured projects">
+  <div class="work-intro">
+    <h1>Selected work by <span class="accent">JJ Vann</span></h1>
+    <p>Apparel, merch and product design</p>
+  </div>
+  {%- for project in projects %}
+  <a class="panel" href="{{ project.url }}"{% if project.coverFocus %} style="--focus: {{ project.coverFocus }}"{% endif %}>
+    {%- if project.coverPath %}
+    {% image project.coverPath, project.coverAlt or project.shortTitle, "(max-width: 760px) 100vw, 34vw", ("eager" if loop.index <= 2 else "lazy"), "panel-img" %}
+    {%- else %}
+    <span class="panel-placeholder" aria-hidden="true">Photo coming soon</span>
+    {%- endif %}
+    <span class="panel-label">
+      {%- if project.tag %}<span class="panel-tag">{{ project.tag }}</span>{% endif %}
+      {%- set words = project.shortTitle.split(" ") %}
+      <span class="panel-name">{{ words.slice(0, -1).join(" ") }} <span class="nowrap">{{ words | last }}<svg class="arrow panel-arrow arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h17M14 5l7 7-7 7"/></svg></span></span>
+    </span>
+  </a>
+  {%- endfor %}
+</section>
+
+<div class="zigzag" aria-hidden="true"></div>
+
+<section id="about" class="about" data-nav-section="about" aria-labelledby="about-heading">
+  <div class="about-text">
+    <h2 id="about-heading">{{ about.heading }}</h2>
+    {{ about.bodyHtml | safe }}
+  </div>
+  <div class="about-photo">
+    {%- if about.photoPath %}
+    {% image about.photoPath, about.photoAlt, "(max-width: 760px) 100vw, 40vw", "lazy", "about-img" %}
+    {%- else %}
+    <span class="about-placeholder">Photo coming soon</span>
+    {%- endif %}
+  </div>
+</section>
+
+<div class="zigzag" aria-hidden="true"></div>
+
+<section id="resume" class="resume" data-nav-section="resume" aria-labelledby="resume-heading">
+  <div class="resume-inner">
+    <div class="resume-head">
+      <h2 id="resume-heading">Resume</h2>
+      {%- if resume.hasPdf %}
+      <a class="button" href="{{ site.resumeFile }}" target="_blank" rel="noopener">Download PDF</a>
+      {%- endif %}
+    </div>
+    <div class="resume-body">
+      {{ resume.html | safe }}
+    </div>
+  </div>
+</section>
+
+<div class="zigzag" aria-hidden="true"></div>
+
+<section id="contact" class="contact" data-nav-section="contact" aria-labelledby="contact-heading">
+  <div class="contact-inner">
+    <h2 id="contact-heading">Contact</h2>
+    <p>Open to apparel, merch and product design roles. Say hello.</p>
+    <ul class="contact-links">
+      <li>
+        <a href="mailto:{{ site.email }}">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+          <span>{{ site.email }}</span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.instagramUrl }}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          <span>Instagram <span class="contact-handle">{{ site.instagramHandle }}</span></span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.linkedinUrl }}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,60 @@
+---
+layout: base.njk
+navActive: work
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "/work/{{ project.slug }}/"
+eleventyComputed:
+  title: "{{ project.title | safe }} | JJ Vann"
+  description: "{{ project.summary | safe }}"
+---
+{%- set nextProject = projects[pagination.pageNumber + 1] or projects[0] %}
+<article class="project">
+  <div class="project-info">
+    <a class="back-link" href="/#work"><svg class="arrow arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h17M14 5l7 7-7 7"/></svg> All work</a>
+
+    {%- if project.logoPath %}
+    <div class="project-logo">{% image project.logoPath, "", "220px", "eager" %}</div>
+    {%- else %}
+    <div class="project-logo project-logo-placeholder" aria-hidden="true">{{ project.shortTitle | truncate(1, true, "") }}</div>
+    {%- endif %}
+
+    <h1 class="project-title">{{ project.title }}</h1>
+    {%- if project.tag %}<p class="tag">{{ project.tag }}</p>{% endif %}
+
+    <div class="project-description">
+      {{ project.descriptionHtml | safe }}
+    </div>
+
+    {%- if project.meta %}
+    <dl class="project-meta">
+      {%- for item in project.meta %}
+      <div><dt>{{ item.label }}</dt><dd>{{ item.value }}</dd></div>
+      {%- endfor %}
+    </dl>
+    {%- endif %}
+
+    <a class="next-link next-link-side" href="{{ nextProject.url }}">Next project: {{ nextProject.shortTitle }}<svg class="arrow arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h17M14 5l7 7-7 7"/></svg></a>
+  </div>
+
+  <div class="project-gallery" role="group" aria-label="{{ project.shortTitle }} images">
+    {%- for item in project.gallery %}
+    {%- if item.heading %}
+    <h2 class="gallery-heading">{{ item.heading }}</h2>
+    {%- endif %}
+    <figure{% if item.size == "half" %} class="is-half"{% endif %}>
+      {% image item.path, item.alt, ("50vw" if item.size == "half" else "(max-width: 900px) 100vw, 56vw"), ("eager" if loop.first else "lazy") %}
+      {%- for extra in item.also %}
+      {% image extra.path, extra.alt, "(max-width: 900px) 100vw, 56vw", "lazy" %}
+      {%- endfor %}
+      {%- if item.caption %}<figcaption>{{ item.caption }}</figcaption>{% endif %}
+    </figure>
+    {%- else %}
+    <div class="gallery-placeholder"><span>Photos coming soon</span></div>
+    {%- endfor %}
+  </div>
+
+  <a class="next-link next-link-end" href="{{ nextProject.url }}">Next project: {{ nextProject.shortTitle }}<svg class="arrow arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12h17M14 5l7 7-7 7"/></svg></a>
+</article>

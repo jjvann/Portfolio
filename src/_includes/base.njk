@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or site.name }}</title>
+  <meta name="description" content="{{ description or 'Apparel, merchandise and product design by JJ Vann.' }}">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  {% include "nav.njk" %}
+
+  <main id="main">
+    {{ content | safe }}
+  </main>
+
+  <script>
+    // Mobile menu open/close
+    var toggle = document.querySelector('.nav-toggle');
+    var links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', function () {
+      var open = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+    var closeMenu = function () {
+      links.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    links.addEventListener('click', closeMenu);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && links.classList.contains('is-open')) {
+        closeMenu();
+        toggle.focus();
+      }
+    });
+
+    // Nav bar gets more see-through once you start scrolling (desktop only, styled in CSS)
+    var nav = document.querySelector('.site-nav');
+    var syncNav = function () { nav.classList.toggle('is-scrolled', window.scrollY > 10); };
+    syncNav();
+    window.addEventListener('scroll', syncNav, { passive: true });
+
+    // Let keyboard users scroll the gallery, but only when it scrolls on its own
+    var gallery = document.querySelector('.project-gallery');
+    if (gallery) {
+      var syncGallery = function () {
+        if (gallery.scrollHeight > gallery.clientHeight + 1) gallery.setAttribute('tabindex', '0');
+        else gallery.removeAttribute('tabindex');
+      };
+      syncGallery();
+      window.addEventListener('resize', syncGallery);
+      window.addEventListener('load', syncGallery);
+    }
+
+    // Home page only: highlight the nav link for the section you are in
+    var sections = document.querySelectorAll('[data-nav-section]');
+    if (sections.length && 'IntersectionObserver' in window) {
+      var navLinks = document.querySelectorAll('[data-nav]');
+      var setActive = function (name) {
+        navLinks.forEach(function (a) {
+          a.setAttribute('aria-current', a.dataset.nav === name ? 'true' : 'false');
+        });
+      };
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) setActive(e.target.dataset.navSection);
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach(function (s) { observer.observe(s); });
+      // The short Contact section at the very bottom never reaches the middle of the screen
+      window.addEventListener('scroll', function () {
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) setActive('contact');
+      }, { passive: true });
+    }
+  </script>
+</body>
+</html>
