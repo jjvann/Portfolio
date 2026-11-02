@@ -89,12 +89,12 @@ a { color: var(--orange); }
   font-size: 1.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--sand);
+  color: var(--orange-light);
   text-decoration: none;
   min-height: 44px; display: inline-flex; align-items: center;
 }
 .nav-logo-mark { height: 34px; width: 34px; display: block; }
-.nav-logo:hover { color: var(--orange-light); }
+.nav-logo:hover { color: var(--sand); }
 .nav-links {
   list-style: none; margin: 0; padding: 0;
   display: flex; align-items: center; gap: clamp(20px, 4.5vw, 72px);
@@ -156,7 +156,6 @@ a { color: var(--orange); }
     background: var(--espresso);
     -webkit-backdrop-filter: none; backdrop-filter: none;
   }
-  .nav-logo { color: var(--orange-light); }
   .nav-toggle { display: flex; }
   .nav-links {
     position: absolute; top: var(--nav-height); left: 0; right: 0;
@@ -179,16 +178,18 @@ a { color: var(--orange); }
 .panels {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto auto minmax(0, 1fr);
   height: 100vh;
   height: 100svh;
   min-height: 640px;
 }
+/* Zig zag strip right under the nav bar */
+.panels > .zigzag { grid-column: 1 / -1; margin-top: var(--nav-height); }
 /* Heading band above the panels: says whose work this is */
 .work-intro {
   grid-column: 1 / -1;
   background: var(--sand);
-  padding: calc(var(--nav-height) + 14px) clamp(16px, 3vw, 36px) 16px;
+  padding: 14px clamp(16px, 3vw, 36px) 16px;
   text-align: center;
 }
 .work-intro h1 {
@@ -281,7 +282,7 @@ a { color: var(--orange); }
 
 @media (max-width: 760px) {
   .panels { display: block; height: auto; min-height: 0; }
-  .work-intro { padding-top: calc(var(--nav-height) + 20px); padding-bottom: 20px; }
+  .work-intro { padding-top: 20px; padding-bottom: 20px; }
   .panel { height: 78vw; max-height: 520px; border-left: 0; border-top: 2px solid var(--sand); }
   .panel:first-of-type { border-top: 0; }
   .panel-name { font-size: 2.25rem; }
@@ -351,14 +352,26 @@ a { color: var(--orange); }
    and each side scrolls on its own, like the scroll bar in the sketch. */
 @media (min-width: 901px) {
   .project {
-    height: 100vh; height: 100svh;
+    grid-template-columns: 9fr 11fr; /* text a bit narrower, photos a bit wider */
     grid-template-rows: minmax(0, 1fr);
-    padding-bottom: 24px;
+    gap: 0;
+    height: 100vh; height: 100svh;
+    max-width: none; margin: 0;
+    padding: var(--nav-height) 0 0;
     overflow: hidden;
   }
-  .project-info, .project-gallery { min-height: 0; height: 100%; overflow-y: auto; }
-  .project-info { padding-right: 12px; }
-  .project-gallery { align-content: start; grid-auto-rows: max-content; padding-right: 4px; }
+  .project-info, .project-gallery {
+    min-height: 0; height: 100%; overflow-y: auto;
+    scrollbar-width: thin; scrollbar-color: rgba(43, 29, 20, 0.28) transparent;
+  }
+  /* Padding sits inside each scrolling half, so the scroll bars never touch the content */
+  .project-info {
+    padding: 32px clamp(24px, 4vw, 64px) 48px;
+  }
+  .project-gallery {
+    align-content: start; grid-auto-rows: max-content;
+    padding: 32px clamp(16px, 2vw, 32px) 48px;
+  }
 }
 .back-link, .next-link {
   display: inline-flex; align-items: center; min-height: 44px;
@@ -367,15 +380,17 @@ a { color: var(--orange); }
   text-decoration: none; color: var(--orange);
 }
 .back-link:hover, .next-link:hover { text-decoration: underline; }
-.project-logo { height: 72px; margin: 12px 0 20px; }
+.project-logo { height: 72px; margin: 12px 0 20px; display: flex; justify-content: center; }
 .project-logo img { height: 72px; width: auto; max-width: 220px; object-fit: contain; }
 .project-logo-placeholder {
   display: flex; align-items: center; justify-content: center;
+  width: 72px; margin-inline: auto;
   border: 2px dashed var(--pine); border-radius: 12px;
   font-family: var(--font-heading); font-weight: 700; font-size: 1.75rem;
   color: var(--pine);
 }
-.project-title { font-size: clamp(2.5rem, 4.5vw, 4rem); margin-bottom: 16px; }
+.project-title { font-size: clamp(2.5rem, 4.5vw, 4rem); margin-bottom: 16px; text-align: center; }
+.project-info .tag { display: table; margin: 0 auto 20px; }
 .project-description p { margin: 0 0 1em; max-width: 34rem; }
 .project-description ul { padding-left: 1.2em; max-width: 34rem; }
 .project-description li { margin-bottom: 0.75em; }
