@@ -21,6 +21,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addWatchTarget("projects/");
   eleventyConfig.addWatchTarget("about.md");
   eleventyConfig.addWatchTarget("resume.md");
+  eleventyConfig.addWatchTarget("src/css/");
   eleventyConfig.addWatchTarget("images/");
 
   // {% image "images/folder/photo.webp", "alt text", "sizes", "eager" %}
