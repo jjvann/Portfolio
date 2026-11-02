@@ -16,10 +16,10 @@ meta:
   - label: Vendors
     value: BSN and Austin Screen Printing
 gallery:
-  - file: team-sunset-flags.webp
-    alt: Three Texas Men's Lacrosse players in white camouflage uniforms at sunset, holding a burnt orange Texas flag and an American flag
   - heading: Shootout for Soldiers uniforms
-    file: uniform-texas-jerseys.webp
+    file: team-sunset-flags.webp
+    alt: Three Texas Men's Lacrosse players in white camouflage uniforms at sunset, holding a burnt orange Texas flag and an American flag
+  - file: uniform-texas-jerseys.webp
     alt: Design sheet for the Texas jersey in a white and gray camouflage pattern with orange numbers and trim, shown front and back with patch and color options
     also:
       - file: uniform-texas-shorts.webp
@@ -32,12 +32,12 @@ gallery:
         alt: Design sheet for desert camouflage shorts with brown trim and a Texas A&M logo, shown from the side, front and back
     caption: Jersey and shorts design, Texas A&M (inspired by Corps of Cadets colors)
   - heading: Apparel
-    file: tshirt-gray-aim-for-the-horns.webp
-    alt: Gray pocket T-shirt, front with a small longhorn logo and back with a lacrosse goal and longhorn graphic reading "Aim for the horns"
-    caption: "Pocket tee, back graphic: Aim for the horns"
-  - file: tshirt-white-hook-em.webp
+    file: tshirt-white-hook-em.webp
     alt: White pocket T-shirt, front with a small longhorn logo and back with a longhorn wearing a lacrosse helmet and the words Texas Lacrosse Hook 'Em
     caption: "Pocket tee, back graphic: Hook 'Em"
+  - file: tshirt-gray-aim-for-the-horns.webp
+    alt: Gray pocket T-shirt, front with a small longhorn logo and back with a lacrosse goal and longhorn graphic reading "Aim for the horns"
+    caption: "Pocket tee, back graphic: Aim for the horns"
   - file: performance-tee-burnt-orange.webp
     alt: Burnt orange performance T-shirt with a white longhorn logo and the word Lacrosse
     caption: Performance tee
