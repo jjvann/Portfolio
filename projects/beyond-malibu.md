@@ -3,7 +3,9 @@ title: Beyond Malibu Shop Brand & Merchandise Line
 shortTitle: Beyond Malibu
 order: 3
 tag: In progress
-cover:
+cover: badge-design.webp
+coverAlt: Beyond Malibu badge design, a diamond with a foggy British Columbia mountain and forest, a green and gold zigzag border and a maple leaf
+coverFocus: 50% 50%
 logo: logo.webp
 summary: A new brand identity and merchandise line for the shop at Beyond Malibu, a Young Life camp in British Columbia.
 meta:
@@ -14,6 +16,12 @@ meta:
   - label: Planned pieces
     value: Beanie, shirts, hoodie, and a uniform set of route stickers
 gallery:
+  - file: badge-design.webp
+    alt: Beyond Malibu badge design, a diamond with a foggy British Columbia mountain and forest, a green and gold zigzag border, the words Backpacking and Sea Kayaking, and a maple leaf
+    caption: Badge design for the Beyond Malibu shop brand
+  - file: beanie-lichen-camo.webp
+    alt: A camouflage knit beanie in gray and lichen green next to a photo of a granite boulder covered in matching lichen
+    caption: Beanie design paired with a reference photo of lichen on granite
 ---
 Beyond Malibu is a Young Life camp in British Columbia with a rich culture, and I know it from the inside as a mountain guide leading backpacking and sea kayaking trips. Next summer I'm taking over the camp shop, and I'm redesigning its brand and merchandise from the ground up.
 

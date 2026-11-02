@@ -3,7 +3,7 @@ title: Texas Men's Lacrosse Apparel & Merchandise
 shortTitle: Texas Men's Lacrosse
 order: 1
 tag:
-cover: player-white-camo-jersey.webp
+cover: player-41-camo-celebration.webp
 coverAlt: A Texas Men's Lacrosse player in a white camouflage jersey pointing to the sky against a black background
 coverFocus: 40% 45%
 logo: logo.webp
@@ -16,8 +16,8 @@ meta:
   - label: Vendors
     value: BSN and Austin Screen Printing
 gallery:
-  - file: player-white-camo-jersey.webp
-    alt: A Texas Men's Lacrosse player in a white camouflage jersey pointing to the sky against a black background
+  - file: team-sunset-flags.webp
+    alt: Three Texas Men's Lacrosse players in white camouflage uniforms at sunset, holding a burnt orange Texas flag and an American flag
   - heading: Shootout for Soldiers uniforms
     file: uniform-texas-jerseys.webp
     alt: Design sheet for the Texas jersey in a white and gray camouflage pattern with orange numbers and trim, shown front and back with patch and color options

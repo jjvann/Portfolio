@@ -4,18 +4,8 @@ _site/
 
 .cache/
 
-# Personal files that must not be published (original resume contains a phone number)
-Apparel_Merch_Resume.docx
-jj.webp
 
-# Working files and originals that stay on your computer (not needed to build the site)
 .claude/
-Portfolio_Brief.md
-Logs home button Desktop.pdf
-Beyond_merch_pics/
-HCM_merch_pics/
-UTlax_merch_pics/
-hcmargs.webp
-longhorn.webp
-younglife.webp
-JVlogo.svg
+
+# Personal source files, brief and unused photos (kept on this computer only)
+source-files/

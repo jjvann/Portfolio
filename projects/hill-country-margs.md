@@ -3,7 +3,7 @@ title: Hill Country Margaritas Merchandise Line
 shortTitle: Hill Country Margs
 order: 2
 tag: Concept
-cover: 4.webp
+cover: hoodie-green-mockup.webp
 coverAlt: Concept mockup of a green Hill Country Margs hoodie with a black star graphic
 coverFocus: 50% 28%
 logo: logo.webp
@@ -17,75 +17,75 @@ meta:
     value: 1 hoodie, 3 shirts, 3 hats, 1 dog toy
 gallery:
   - heading: The collection
-    file: 3.webp
+    file: collection-overview.webp
     alt: Overview of the collection laid out on white - a green hoodie, tees, two hats and a margarita glass dog toy
     caption: The collection at a glance
   - heading: Hoodie
-    file: 4.webp
+    file: hoodie-green-mockup.webp
     alt: Concept mockup of a green Hill Country Margs hoodie with a black star graphic, worn with light jeans
     caption: Hoodie, with the Hollywood-inspired star
     size: half
-  - file: 10.webp
+  - file: hoodie-green-flat.webp
     alt: Green hoodie with a black star and the words Hill Country Margs Serving Austin
     caption: Hoodie graphic
     size: half
   - heading: Margs tee
-    file: 11.webp
+    file: margs-tee-cream-flat.webp
     alt: Cream T-shirt with Hill Country Margs Serving Austin in green on the front
     caption: Margs tee, front
     size: half
-  - file: 17.webp
+  - file: margs-tee-cream-worn.webp
     alt: Cream Margs tee worn with light jeans
     caption: Margs tee, worn
     size: half
   - heading: HCM tee
-    file: 13.webp
+    file: hcm-tee-white-front.webp
     alt: White T-shirt with a small black HCM oval logo on the chest
     caption: HCM tee, front
     size: half
-  - file: 14.webp
+  - file: hcm-tee-white-back.webp
     alt: Back of a white T-shirt with Hill Country Margs stacked in black wavy letters beside a sun
     caption: HCM tee, back
     size: half
-  - file: 18.webp
+  - file: hcm-tee-white-worn-front.webp
     alt: White HCM tee worn with shorts and a black cap
     caption: HCM tee, worn
     size: half
-  - file: 19.webp
+  - file: hcm-tee-white-worn-back.webp
     alt: Back of the white tee with the stacked Hill Country Margs and sun graphic, worn with shorts
     caption: HCM tee, back, worn
     size: half
   - heading: Script tee
-    file: 15.webp
+    file: script-tee-white-front.webp
     alt: White T-shirt with small black Hill Country Margaritas script on the chest
     caption: Script tee, front
     size: half
-  - file: 16.webp
+  - file: script-tee-white-back.webp
     alt: Back of a white T-shirt with two horses, lasso and stars above the words Hill Country Margs
     caption: Script tee, back
     size: half
-  - file: 20.webp
+  - file: script-tee-white-worn-front.webp
     alt: White script tee worn with shorts and a black cap
     caption: Script tee, worn
     size: half
-  - file: 21.webp
+  - file: script-tee-white-worn-back.webp
     alt: Back of the white tee with the horses and lasso graphic, worn with shorts
     caption: Script tee, back, worn
     size: half
   - heading: Hats and dog toy
-    file: 23.webp
+    file: cap-corduroy-cream-green.webp
     alt: Cream and green corduroy cap with Hill Country Margs Serving Austin in green, front and side views
     caption: Hat 1
     size: half
-  - file: 24.webp
+  - file: cap-rope-black-hcm.webp
     alt: Black rope cap with a white HCM oval logo, front and side views
     caption: Hat 2
     size: half
-  - file: 25.webp
+  - file: cap-rope-black-margaritas.webp
     alt: Black rope cap reading Hill Country Margaritas with three stars, front and side views
     caption: Hat 3
     size: half
-  - file: 9.webp
+  - file: dog-toy-margarita-glass.webp
     alt: Illustration of a margarita glass with a lime slice and two black paw prints, labeled Hill Country Margs
     caption: Dog toy
     size: half
