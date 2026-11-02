@@ -6,6 +6,7 @@ tag: Concept
 cover: hoodie-green-mockup.webp
 coverAlt: Concept mockup of a green Hill Country Margs hoodie with a black star graphic
 coverFocus: 50% 28%
+coverFocusMobile: 50% 0%
 logo: logo.webp
 summary: An eight-piece concept merch line for an Austin margarita machine rental company. Never put into production.
 meta:

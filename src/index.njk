@@ -10,7 +10,7 @@ navActive: work
     <p>Apparel, merch and product design</p>
   </div>
   {%- for project in projects %}
-  <a class="panel" href="{{ project.url }}"{% if project.coverFocus %} style="--focus: {{ project.coverFocus }}"{% endif %}>
+  <a class="panel" href="{{ project.url }}"{% if project.coverFocus %} style="--focus: {{ project.coverFocus }}{% if project.coverFocusMobile %}; --focus-mobile: {{ project.coverFocusMobile }}{% endif %}"{% endif %}>
     {%- if project.coverPath %}
     {% image project.coverPath, project.coverAlt or project.shortTitle, "(max-width: 760px) 100vw, 34vw", ("eager" if loop.index <= 2 else "lazy"), "panel-img" %}
     {%- else %}
