@@ -111,14 +111,22 @@ a { color: var(--orange); }
   color: var(--sand);
   text-decoration: none;
   min-height: 44px; display: inline-flex; align-items: center;
-  padding: 0 4px;
+  /* Extra space on the left balances the letter spacing after the last letter, so the words are truly centered */
+  --nav-pad: 4px;
+  padding: 0 var(--nav-pad) 0 calc(var(--nav-pad) + 0.06em);
+  position: relative;
 }
 .nav-links a:hover { color: var(--orange-light); }
-.nav-links a[aria-current="true"] {
-  color: var(--orange-light);
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 5px;
+.nav-links a[aria-current="true"] { color: var(--orange-light); }
+/* Underline that runs exactly from the first letter to the last letter */
+.nav-links a[aria-current="true"]::after {
+  content: "";
+  position: absolute;
+  left: calc(var(--nav-pad) + 0.06em);
+  right: calc(var(--nav-pad) + 0.06em);
+  top: calc(50% + 0.54em);
+  height: 3px;
+  background: var(--orange-light);
 }
 .nav-links a.nav-contact {
   background: var(--orange);
@@ -152,6 +160,15 @@ a { color: var(--orange); }
   }
   .nav-logo { left: clamp(16px, 3vw, 40px); }
   .nav-links li:last-child { right: clamp(16px, 3vw, 40px); }
+  /* About sits exactly in the middle of the screen; Work and Resume sit equal distances either side of it */
+  .nav-links {
+    display: grid; grid-template-columns: 1fr auto 1fr;
+    width: min(100%, 720px);
+    pointer-events: none;
+  }
+  .nav-links li { pointer-events: auto; }
+  .nav-links li:nth-child(1) { justify-self: end; }
+  .nav-links li:nth-child(3) { justify-self: start; }
 }
 
 @media (max-width: 760px) {
@@ -172,8 +189,9 @@ a { color: var(--orange); }
   /* zig zag strip at the bottom of the open menu */
   .nav-links::after { content: ""; display: block; flex: none; margin: 20px -16px 0; }
   .nav-links.is-open { display: flex; }
-  .nav-links a { font-size: 1.5rem; min-height: 56px; border-bottom: 0; padding: 0 8px; }
-  .nav-links a[aria-current="true"] { text-decoration: none; border-left: 4px solid var(--orange-light); padding-left: 12px; }
+  .nav-links a { font-size: 1.5rem; min-height: 56px; border-bottom: 0; --nav-pad: 8px; }
+  .nav-links a[aria-current="true"] { border-left: 4px solid var(--orange-light); padding-left: 12px; }
+  .nav-links a[aria-current="true"]::after { display: none; }
   .nav-links a.nav-contact { justify-content: center; margin-top: 12px; }
 }
 
