@@ -438,6 +438,8 @@ a { color: var(--orange); }
 .project-gallery .gallery-placeholder { grid-column: 1 / -1; }
 .project-gallery picture { display: block; }
 .project-gallery img { display: block; width: 100%; height: auto; }
+/* Crop a photo to a square so it lines up with a square photo beside it (add "square: true" in the project file) */
+.project-gallery figure.is-square img { aspect-ratio: 1 / 1; object-fit: cover; }
 .project-gallery figcaption {
   padding: 8px 12px; font-size: 0.875rem; color: var(--espresso);
   background: var(--sand);

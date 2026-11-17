@@ -38,6 +38,14 @@ gallery:
   - file: tshirt-gray-aim-for-the-horns.webp
     alt: Gray pocket T-shirt, front with a small longhorn logo and back with a lacrosse goal and longhorn graphic reading "Aim for the horns"
     caption: "Pocket tee, back graphic: Aim for the horns"
+  - file: sketch-hook-em-tee.webp
+    alt: Pencil sketch of a longhorn wearing a lacrosse helmet, seen from the front with horns spread wide
+    caption: "Sketch: Hook 'Em"
+    size: half
+  - file: sketch-aim-for-the-horns-tee.webp
+    alt: Pencil sketch of a longhorn logo inside a lacrosse goal, with the words Aim for the horns, Texas Lacrosse underneath
+    caption: "Sketch: Aim for the horns"
+    size: half
   - file: performance-tee-burnt-orange.webp
     alt: Burnt orange performance T-shirt with a white longhorn logo and the word Lacrosse
     caption: Performance tee

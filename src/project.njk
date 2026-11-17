@@ -44,7 +44,7 @@ eleventyComputed:
     {%- if item.heading %}
     <h2 class="gallery-heading">{{ item.heading }}</h2>
     {%- endif %}
-    <figure{% if item.size == "half" %} class="is-half"{% endif %}>
+    <figure{% if item.size == "half" or item.square %} class="{{ "is-half" if item.size == "half" }}{{ " is-square" if item.square }}"{% endif %}>
       {% image item.path, item.alt, ("(max-width: 900px) 50vw, 24vw" if item.size == "half" else "(max-width: 900px) 100vw, 46vw"), ("eager" if loop.first else "lazy") %}
       {%- for extra in item.also %}
       {% image extra.path, extra.alt, "(max-width: 900px) 100vw, 46vw", "lazy" %}
