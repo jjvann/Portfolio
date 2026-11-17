@@ -3,7 +3,7 @@ title: Beyond Malibu Shop Brand & Merchandise Line
 shortTitle: Beyond Malibu
 order: 3
 tag: In progress
-cover: guide-in-camo-beanie.webp
+cover: guide-hand-signs-beanie.webp
 coverAlt: A smiling hiker in a camouflage beanie and gray rain jacket throwing up two hand signs in front of a forested mountain wrapped in cloud
 coverFocus: 50% 30%
 logo: logo.webp
@@ -16,6 +16,21 @@ meta:
   - label: Planned pieces
     value: Beanie, shirts, hoodie, and a uniform set of route stickers
 gallery:
+  - heading: Crewneck
+    file: sweater-mockup.webp
+    alt: Mockup of a dark green crewneck sweatshirt with the Beyond Malibu mountain logo printed in cream and green on the chest
+    caption: Crewneck mockup
+  - file: sweater-iterations.webp
+    alt: Five layouts of the Beyond Malibu logo in cream on dark green, each with an illustrated granite mountain, a waterfall and trees, the words Beyond Malibu, Est. 1970 and A Young Life camp in BC, Canada
+    caption: Iterations of the design
+  - file: sketch-sweater.webp
+    alt: Pencil sketch of the words Beyond Malibu with a granite mountain, a waterfall and rows of evergreen trees between them
+    caption: First sketch for the crewneck design
+    size: half
+  - file: one-eye-mountain.webp
+    alt: A granite peak at dusk rising behind a camp of red and orange tents, with a guide in a bucket hat standing among them
+    caption: One Eye, the mountain that inspired the sketch
+    size: half
   - heading: Beanie
     file: beanie-concept.webp
     alt: A knit beanie in a gray and lichen green camouflage pattern on a soft gray background
@@ -26,21 +41,6 @@ gallery:
     caption: Lichen on granite, the inspiration for the beanie pattern
     size: half
     square: true
-  - heading: Sweater
-    file: sketch-sweater.webp
-    alt: Pencil sketch of the words Beyond Malibu with a granite mountain, a waterfall and rows of evergreen trees between them
-    caption: First sketch for the sweater design
-    size: half
-  - file: one-eye-mountain.webp
-    alt: A granite peak at dusk rising behind a camp of red and orange tents, with a guide in a bucket hat standing among them
-    caption: One Eye, the mountain that inspired the sketch
-    size: half
-  - file: sweater-iterations.webp
-    alt: Five layouts of the Beyond Malibu logo in cream on dark green, each with an illustrated granite mountain, a waterfall and trees, the words Beyond Malibu, Est. 1970 and A Young Life camp in BC, Canada
-    caption: Iterations of the design
-  - file: sweater-mockup.webp
-    alt: Mockup of a dark green crewneck sweatshirt with the Beyond Malibu mountain logo printed in cream and green on the chest
-    caption: Sweater mockup
 ---
 Beyond Malibu is a Young Life camp in British Columbia with a rich culture, and I know it from the inside as a mountain guide leading backpacking and sea kayaking trips. Next summer I'm taking over the camp shop, and I'm redesigning its brand and merchandise from the ground up.
 
